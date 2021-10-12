@@ -3,6 +3,9 @@
 
 import streamlit as st
 
-st.write("Hello World!")
+st.header("The First Iteration")
 
-st.write("1,2,3,4")
+st.write("Persona 5 Royal Negotiation Guide?")
+
+personaname = st.text_input()
+st.write("The current persona is:", personaname)
