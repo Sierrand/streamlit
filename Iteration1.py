@@ -24,6 +24,5 @@ jack_o_lantern2 = pd.DataFrame({"Gloomy":["-", "G", "-"],
 if personaname == "Jack":
     st.write("I'm busy, ho. It's tough being so popular.")
     st.write(jack_o_lantern1)
-    st.write("/n")
     st.write("This is all some kind of TV thing, hee-ho! Where's the camera?")
     st.write(jack_o_lantern2)
