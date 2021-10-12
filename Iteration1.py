@@ -9,10 +9,15 @@ st.write("An interactive guide to shadow negotiations in Persona 5 Royal")
 personaname = st.text_input("Type name here!")
 st.write("The current persona is:", personaname)
 
-jack_o_lantern1 = pd.DataFrame({"Gloomy":["-", "-", "G"], 
-                                "Irritable":["-", "-", "-"],
-                                "Timid":["G", "-", "-"], 
-                                "Upbeat":["G", "-", "O"]},
+G = "Gloomy"
+I = "Irritable"
+T = "Timid"
+U = "Upbeat"
+
+jack_o_lantern1 = pd.DataFrame({G:["-", "-", "G"], 
+                                I:["-", "-", "-"],
+                                T:["G", "-", "-"], 
+                                U:["G", "-", "O"]},
                                index=["You do sound busy.", "Your popularity won't last.", "Who cares?"])
 
 jack_o_lantern2 = pd.DataFrame({"Gloomy":["-", "G", "-"], 
