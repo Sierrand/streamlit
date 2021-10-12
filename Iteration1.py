@@ -1,3 +1,4 @@
+
 import streamlit as st
 import pandas as pd
 
@@ -5,18 +6,24 @@ st.header("Persona 5 Royal Negotiation Guide")
 
 st.write("An interactive guide to shadow negotiations in Persona 5 Royal")
 
-palaceoption = st.radio("Please specify the palace you are in", ("Kamoshida's Palace", "Madarame's Palace"))
-st.write("The current palace is:", palaceoption)
-
 personaname = st.text_input("Type name here!")
 st.write("The current persona is:", personaname)
 
-jack_o_lantern1 = pd.DataFrame({"Gloomy":["x", "x", "G"], 
-                                "Irritable":["x", "x", "x"],
-                                "Timid":["G", "x", "x"], 
-                                "Upbeat":["G", "x", "O"]},
+jack_o_lantern1 = pd.DataFrame({"Gloomy":["-", "-", "G"], 
+                                "Irritable":["-", "-", "-"],
+                                "Timid":["G", "-", "-"], 
+                                "Upbeat":["G", "-", "O"]},
                                index=["You do sound busy.", "Your popularity won't last.", "Who cares?"])
+
+jack_o_lantern2 = pd.DataFrame({"Gloomy":["-", "G", "-"], 
+                                "Irritable":["-", "-", "-"],
+                                "Timid":["O", "G", "-"], 
+                                "Upbeat":["G", "G", "B"]},
+                               index=["Wow, you got me.", "What's all this now?", "This is real."])
 
 if personaname == "Jack":
     st.write("I'm busy, ho. It's tough being so popular.")
     st.write(jack_o_lantern1)
+    st.write("/n")
+    st.write("This is all some kind of TV thing, hee-ho! Where's the camera?")
+    st.write(jack_o_lantern2)
