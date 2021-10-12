@@ -1,4 +1,3 @@
-
 import streamlit as st
 import pandas as pd
 
@@ -14,10 +13,15 @@ I = "Irritable"
 T = "Timid"
 U = "Upbeat"
 
-jack_o_lantern1 = pd.DataFrame({G:["-", "-", "G"], 
-                                I:["-", "-", "-"],
-                                T:["G", "-", "-"], 
-                                U:["G", "-", "O"]},
+NNG = ["-", "-", "G"]
+NNN = ["-", "-", "-"]
+GNN = ["G", "-", "-"]
+GNO = ["G", "-", "O"]
+
+jack_o_lantern1 = pd.DataFrame({G:NNG, 
+                                I:NNN,
+                                T:GNN, 
+                                U:GNO},
                                index=["You do sound busy.", "Your popularity won't last.", "Who cares?"])
 
 jack_o_lantern2 = pd.DataFrame({"Gloomy":["-", "G", "-"], 
