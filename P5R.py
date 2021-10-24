@@ -119,12 +119,12 @@ agathion4 = pd.DataFrame({G:BGN, I:GNN, T:GGB, U:GGO}, index=["I'm smart.", "I'm
 
 if personaname == "":
     st.write("Please enter a name.")
-elif personaname == "Jack":
+if personaname == "Jack":
     st.write("I'm busy, ho. It's tough being so popular.")
     st.write(jack_o_lantern1)
     st.write("This is all some kind of TV thing, hee-ho! Where's the camera?")
     st.write(jack_o_lantern2)
-elif personaname == ("Pixie") or ("pixie"):
+if personaname == ("Pixie") or ("pixie"):
     st.write("Ah, so I suppose you commit such extreme acts because you know you won't be punished harshly...")
     st.write(pixie1)
     st.write("But before you do, do something funny. What can you do?")
@@ -159,7 +159,7 @@ elif personaname == ("Pixie") or ("pixie"):
     st.write(pixie16)
     st.write("You're lucky it was just me. You can't do anything like this in the real world, right?")
     st.write(pixie17)
-elif personaname == ("Agathion") or ("agathion"):
+if personaname == ("Agathion") or ("agathion"):
     st.write("Ain't people your age suppose'ta be out on dates and stuff instead?")
     st.write(agathion1)
     st.write("This is that 'domestic violins' thing, right?")
