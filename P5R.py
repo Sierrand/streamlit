@@ -117,7 +117,9 @@ agathion2 = pd.DataFrame({G:GNG, I:NGB, T:GNG, U:GNG}, index=["That's 'domestic 
 agathion3 = pd.DataFrame({G:OGN, I:NGN, T:GNG, U:GGG}, index=["A love letter.", "A threat letter.", "A coupon."])
 agathion4 = pd.DataFrame({G:BGN, I:GNN, T:GGB, U:GGO}, index=["I'm smart.", "I'm good at PE.", "Shut up."])
 
-if personaname == "Jack":
+if personaname == "":
+    st.write("Please enter a name.")
+elif personaname == "Jack":
     st.write("I'm busy, ho. It's tough being so popular.")
     st.write(jack_o_lantern1)
     st.write("This is all some kind of TV thing, hee-ho! Where's the camera?")
