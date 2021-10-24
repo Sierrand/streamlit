@@ -119,12 +119,12 @@ agathion4 = pd.DataFrame({G:BGN, I:GNN, T:GGB, U:GGO}, index=["I'm smart.", "I'm
 
 if personaname == "":
     st.write("Please enter a name.")
-if personaname == "Jack":
+elif personaname == "Jack":
     st.write("I'm busy, ho. It's tough being so popular.")
     st.write(jack_o_lantern1)
     st.write("This is all some kind of TV thing, hee-ho! Where's the camera?")
     st.write(jack_o_lantern2)
-if personaname == ("Pixie") or ("pixie"):
+elif personaname == ("Pixie") or ("pixie"):
     st.write("Ah, so I suppose you commit such extreme acts because you know you won't be punished harshly...")
     st.write(pixie1)
     st.write("But before you do, do something funny. What can you do?")
@@ -159,7 +159,7 @@ if personaname == ("Pixie") or ("pixie"):
     st.write(pixie16)
     st.write("You're lucky it was just me. You can't do anything like this in the real world, right?")
     st.write(pixie17)
-if personaname == ("Agathion") or ("agathion"):
+elif personaname == ("Agathion") or ("agathion"):
     st.write("Ain't people your age suppose'ta be out on dates and stuff instead?")
     st.write(agathion1)
     st.write("This is that 'domestic violins' thing, right?")
@@ -168,3 +168,5 @@ if personaname == ("Agathion") or ("agathion"):
     st.write(agathion3)
     st.write("You're s'posed to go easy on kids! Are you stupid? Do you go to school and get stupid grades?")
     st.write(agathion4)
+else:
+    st.write("No name chosen.")
