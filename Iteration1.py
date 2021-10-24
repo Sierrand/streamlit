@@ -102,14 +102,27 @@ pixie11 = pd.DataFrame({G:NNG, I:NOO, T:GNN, U:BNG}, index=["Not talking down to
                                                             "Sharing household chores.", 
                                                             "Splitting all the costs."])
 pixie12 = pd.DataFrame({G:NNN, I:GNO, T:NGN, U:GNO}, index=["A High School Outfit.", "A Kimono.", "Don't wear anything."])
+pixie13 = pd.DataFrame({G:NGG, I:GNN, T:OGG, U:OGG}, index=["I could.", "How could you tell?", "What do you want me to do?"])
+pixie14 = pd.DataFrame({G:OBB, I:GOB, T:OGN, U:BOG}, index=["Fine, I will.", "I can't just leave you.", "Is that reverse psychology?"])
+pixie15 = pd.DataFrame({G:BGG, I:GNG, T:OGG, U:GGG}, index=["That's right.", "It won't?", "It's for self-improvement."])
+pixie16 = pd.DataFrame({G:GNN, I:NNO, T:NBO, U:OOG}, index=["I'm not special.", "That's right.", "I have ulterior motives."])
+pixie17 = pd.DataFrame({G:BON, I:NNN, T:NBB, U:NNN}, index=["That's right.", "I choose my targets carefully.", "I'm serious about this."])
 
+agathion1 = pd.DataFrame({G:NNG, I:NOG, T:GNG, U:GOG}, index=["Right after this, kid.", 
+                                                              "Such a rude little boy...", 
+                                                              "Dating's not important."])
+agathion2 = pd.DataFrame({G:GNG, I:NGB, T:GNG, U:GNG}, index=["That's 'domestic violence.'", 
+                                                              "What? No, you're wrong...", 
+                                                              "Um, are things okay at home?"])
+agathion3 = pd.DataFrame({G:OGN, I:NGN, T:GNG, U:GGG}, index=["A love letter.", "A threat letter.", "A coupon."])
+agathion4 = pd.DataFrame({G:BGN, I:GNN, T:GGB, U:GGO}, index=["I'm smart.", "I'm good at PE.", "Shut up."])
 
 if personaname == "Jack":
     st.write("I'm busy, ho. It's tough being so popular.")
     st.write(jack_o_lantern1)
     st.write("This is all some kind of TV thing, hee-ho! Where's the camera?")
     st.write(jack_o_lantern2)
-elif personaname == "Pixie":
+elif personaname == ("Pixie") or ("pixie"):
     st.write("Ah, so I suppose you commit such extreme acts because you know you won't be punished harshly...")
     st.write(pixie1)
     st.write("But before you do, do something funny. What can you do?")
@@ -134,3 +147,22 @@ elif personaname == "Pixie":
     st.write(pixie11)
     st.write("What should I wear?")
     st.write(pixie12)
+    st.write("When it came right down to it, you couldn't do anything to me!")
+    st.write(pixie13)
+    st.write("Won't you just leave me be?")
+    st.write(pixie14)
+    st.write("You carry a gun because you think it'll make you more popular with the girls?")
+    st.write(pixie15)
+    st.write("You, however are talking to me right here. Are you the exception to this rule?")
+    st.write(pixie16)
+    st.write("You're lucky it was just me. You can't do anything like this in the real world, right?")
+    st.write(pixie17)
+elif personaname == ("Agathion") or ("agathion"):
+    st.write("Ain't people your age suppose'ta be out on dates and stuff instead?")
+    st.write(agathion1)
+    st.write("This is that 'domestic violins' thing, right?")
+    st.write(agathion2)
+    st.write("What was that, anyway?")
+    st.write(agathion3)
+    st.write("You're s'posed to go easy on kids! Are you stupid? Do you go to school and get stupid grades?")
+    st.write(agathion4)
