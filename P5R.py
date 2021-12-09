@@ -136,7 +136,7 @@ angel2 = pd.DataFrame({G:NON, I:OBG, T:OGN, U:GNN}, index=["Older people trying 
 angel3 = pd.DataFrame({G:NNN, I:OGN, T:OGN, U:NNG}, index=["Looks like it came true.", 
                                                            "It's just a horoscope.", 
                                                            "How is your luck in romance?"])
-angel3 = pd.DataFrame({G:ONG, I:GNN, T:GNN, U:ONG}, index=["I feel bad.", "I don't agree with this.", "Everyone wins."])
+angel4 = pd.DataFrame({G:ONG, I:GNN, T:GNN, U:ONG}, index=["I feel bad.", "I don't agree with this.", "Everyone wins."])
 
 archangel1 = pd.DataFrame({G:NNN, I:NGO, T:NNN, U:NNN}, index=["I can certainly try.", "No can do.", "What's veneration?"])
 archangel2 = pd.DataFrame({G:NNN, I:BOG, T:NGN, U:GNN}, index=["Sin...?", "Please tell me.", "I've done nothing wrong."])
