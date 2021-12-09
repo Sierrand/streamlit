@@ -14,7 +14,7 @@ KArr = ["Jack", "Pixie", "Agathion", "Mandrake", "Bicorn", "Cait Sith", "Incubus
 selected = st.selectbox("Would you like to display all of the options from a particular palace?", palaces)
 
 if selected == "Kamoshida's Palace":
-    st.dataframe(KArr)
+    st.sidebar.table(KArr)
 
 personaname = st.text_input("Type name here!")
 st.write("The current persona is:", personaname)
