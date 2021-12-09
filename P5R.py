@@ -8,9 +8,9 @@ st.header("Persona 5 Royal Negotiation Guide")
 
 st.write("An interactive guide to shadow negotiations in Persona 5 Royal")
 
-palaces = ["Kamoshida's Palace", "..."]
+palaces = ["None", "Kamoshida's Palace", "..."]
 
-st.radio("Would you like to display all of the options from a particular palace?", palaces)
+st.selectbox("Would you like to display all of the options from a particular palace?", palaces)
 
 personaname = st.text_input("Type name here!")
 st.write("The current persona is:", personaname)
