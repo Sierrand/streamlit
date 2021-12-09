@@ -9,13 +9,14 @@ st.header("Persona 5 Royal Negotiation Guide")
 st.write("An interactive guide to shadow negotiations in Persona 5 Royal")
 
 palaces = ["None", "Kamoshida's Palace", "..."]
-KArr = (["Jack", "..."], ["Pixie","..."], ["Agathion","..."], ["Mandrake","..."], ["Bicorn","..."], ["Cait Sith","..."], ["Incubus","..."], ["Kelpie","..."], ["Silky","..."], ["Succubus","..."], ["Angel","..."], ["Berith","..."], ["Archangel","..."], ["Eligor","..."])
+
+Kdata = {"Persona":["Jack-o'-Lantern", "Pixie", "Agathion", "Mandrake", "Bicorn", "Cait Sith", "Incubus", "Kelpie", "Silky", "Succubus", "Angel", "Berith", "Archangel", "Eligor"], "Shadow":["Crypt-dwelling Pyromaniac", "Beguiling Girl", "Apprentice in a Jug", "Gallows-Flower", "Dirty Two-horned Beast", "Hunting Puss in Boots", "Bedside Brute", "Mad Marsh Horse", "Troublesome Housemaid", "Twilight Prostitute", "Zealous Messenger", "Brutal Cavalryman", "Heavenly Punisher", "War-hungry Horseman"]}
+Kdf = pd.DataFrame(data=KData)
 
 selected = st.selectbox("Would you like to display all of the options from a particular palace?", palaces)
 
 if selected == "Kamoshida's Palace":
-    st.sidebar.header("Shadows in Kamoshida's Palace")
-    st.sidebar.table(KArr)
+    Kdf
 
 personaname = st.text_input("Type name here!")
 st.write("The current persona is:", personaname)
