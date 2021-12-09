@@ -9,7 +9,7 @@ st.header("Persona 5 Royal Negotiation Guide")
 st.write("An interactive guide to shadow negotiations in Persona 5 Royal")
 
 palaces = ["None", "Kamoshida's Palace", "..."]
-KArr = (["Jack", "Pixie", "Agathion", "Mandrake", "Bicorn", "Cait Sith", "Incubus", "Kelpie", "Silky", "Succubus", "Angel", "Berith", "Archangel", "Eligor"])
+KArr = ["Jack", "Pixie", "Agathion", "Mandrake", "Bicorn", "Cait Sith", "Incubus", "Kelpie", "Silky", "Succubus", "Angel", "Berith", "Archangel", "Eligor"]
 
 selected = st.selectbox("Would you like to display all of the options from a particular palace?", palaces)
 
