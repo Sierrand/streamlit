@@ -16,7 +16,7 @@ Kdata = {"Persona":["Jack-o'-Lantern", "Pixie", "Agathion", "Mandrake", "Bicorn"
 selected = st.selectbox("Would you like to display all of the options from a particular palace?", palaces)
 
 if selected == "Kamoshida's Palace":
-    st.write(KData)
+    st.write(Kdata)
 
 personaname = st.text_input("Type name here!")
 st.write("The current persona is:", personaname)
